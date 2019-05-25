@@ -55,7 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         if (i==list.size()){
         myViewHolder.v.setVisibility(View.INVISIBLE);
     }
-    myViewHolder.title.setOnClickListener(new View.OnClickListener() {
+    myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             final Dialog dialog = new Dialog(context);
